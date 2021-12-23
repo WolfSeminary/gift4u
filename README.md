@@ -1,2 +1,2 @@
-# giftMe
+# Gift-me
 Gift Cards Shop
