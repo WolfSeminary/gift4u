@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import GiftDetailed from './GiftDetailed';
 function App() {
   return (
     <div className="App">
