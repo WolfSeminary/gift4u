@@ -20,7 +20,7 @@ export default function selectedCategory() {
           labelId="demo-simple-select-helper-label"
           id="demo-simple-select-helper"
           value={category}
-          label="Age"
+          label="category"
           onChange={onSelectedCategoryChange}
         >
           <MenuItem value="">
