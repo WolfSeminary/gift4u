@@ -31,7 +31,6 @@ export default function GiftCategories() {
           <MenuItem value={30}>category3</MenuItem>
         </Select>
       </FormControl>
- 
     </div>
   );
-}
+} 
