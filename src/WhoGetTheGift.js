@@ -1,7 +1,8 @@
 import * as React from 'react';
 import {ToggleButton, ToggleButtonGroup, Typography} from '@mui/material';
 import './WhoGetTheGift.css';
-export default function ColorToggleButton() {
+
+export default function WhoGetTheGift() {
     const [alignment, setAlignment] = React.useState('web');
     const handleChange = (event, newAlignment) => {
         setAlignment(newAlignment);
@@ -22,3 +23,4 @@ export default function ColorToggleButton() {
         </>
     );
 }
+
