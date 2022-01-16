@@ -16,10 +16,9 @@ export default function Card() {
           alt="green iguana"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" > 
+          <Typography gutterBottom variant="h5" component="div" >
             Lizard
           </Typography>
-         
         </CardContent>
       </CardActionArea>
     </Card>
