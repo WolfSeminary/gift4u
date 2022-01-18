@@ -9,16 +9,15 @@ const Item = styled(Paper)(({ theme }) => ({
   paddingLeft:theme.spacing(9),
   paddingRight:theme.spacing(9),
   textAlign: 'center',
- 
   color: theme.palette.text.secondary,
 }));
 
-export default function Homepage() {
+export default function HomePage() {
   return (
     <div>
       <Stack direction="row" spacing={2}>
         <Item><GiftCategories/></Item>
-        <Item>{/*<FindGift />*/}</Item>
+        <Item>{/*Add <FindGift /> component here*/}</Item>
       </Stack>
     </div>
   );
