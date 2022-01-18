@@ -1,11 +1,10 @@
 import React from "react"
-import GiftsPage from "./GiftsPage"
-import GiftsPage from "./Gifts"
+import Gifts from "./Gifts"
 
 export default function GiftsPage() {
     return (
         <>
-            <GiftsPage/>
+            <Gifts/>
             <Gifts/>
         </>
     );
