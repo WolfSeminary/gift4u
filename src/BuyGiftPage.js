@@ -6,20 +6,16 @@ import GiftSender from './GiftSender'
 import GiftNote from './GiftNote'
 
 export default BuyGiftPage = () => {
-    onWhoGetsTheGiftChange(event)
-    {
+    const onWhoGetsTheGiftChange = (event) => {
         setWhoGetsTheGift(event.target.value);
     }
-    onGiftRecipientChange(event)
-    {
+    const onGiftRecipientChange = (event) => {
         setGiftRecipient(event.target.value);
     }
-    onGiftSenderChange(event)
-    {
+    const onGiftSenderChange = (event) => {
         setGiftSender(event.target.value);
     }
-    onGiftNoteChange(event)
-    {
+    const onGiftNoteChange = (event) => {
         setGiftNote(event.target.value);
     }
     return (
