@@ -5,9 +5,9 @@ import GiftDetailed from './GiftDetailed'
 
 const GiftPage = () => {
     <>
-        <AppBar />
-        <Breadcrumbs />
-        <GiftDetailed />
+        <AppBar/>
+        <Breadcrumbs/>
+        <GiftDetailed/>
     </>
 }
 
