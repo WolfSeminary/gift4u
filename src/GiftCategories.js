@@ -5,9 +5,9 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 const GiftCategories = () => {
-    const [category, setCategory] = React.useState('');
-    const handleChange = (event) => {
-        setCategory(event.target.value);
+    const [selectedCategory , selectedCategory ] = React.useState('');
+    const onSelectedCategoryChange = (event) => {
+        selectedCategory(event.target.value);
     };
     return (
         <div>
@@ -18,7 +18,7 @@ const GiftCategories = () => {
                     id="demo-simple-select-helper"
                     value={category}
                     label="Categories"
-                    onChange={handleChange}
+                    onChange={onSelectedCategoryChange}
                 >
                     <MenuItem value={1}>Food</MenuItem>
                     <MenuItem value={2}>Attractions</MenuItem>
