@@ -1,4 +1,4 @@
-import React, { event } from "react"
+import React from "react"
 import AppBar from './AppBar'
 import WhoGetTheGift from './WhoGetTheGift'
 import GiftRecipient from './GiftRecipient'
@@ -6,30 +6,29 @@ import GiftSender from './GiftSender'
 import GiftNote from './GiftNote'
 
 export default BuyGiftPage = () => {
-    onWhoGetsTheGiftChange(event)
+    onWhoGetsTheGiftChange(value)
     {
-        setWhoGetsTheGift(event.target.value);
+        setWhoGetsTheGift(value);
     }
-    onGiftRecipientChange(event)
+    onGiftRecipientChange(value)
     {
-        setGiftRecipient(event.target.value);
+        setGiftRecipient(value);
     }
-    onGiftSenderChange(event)
+    onGiftSenderChange(value)
     {
-        setGiftSender(event.target.value);
+        setGiftSender(value);
     }
-    onGiftNoteChange(event)
+    onGiftNoteChange(value)
     {
-        setGiftNote(event.target.value);
+        setGiftNote(value);
     }
     return (
         <>
-            <WhoGetTheGift onChange={onWhoGetsTheGiftChange} />
-            <GiftRecipient onChange={onGiftRecipientChange} />
-            <GiftSender onChange={onGiftSenderChange} />
-            <GiftNote onChange={onGiftNoteChange} />
-            <AppBar />
+            <WhoGetTheGift onChange={(event) => onWhoGetsTheGiftChange(event)} />
+            <GiftRecipient onChange={(event) => onGiftRecipientChange(event)} />
+            <GiftSender onChange={(event) => onGiftSenderChange(event)} />
+            <GiftNote onChange={(event) => onGiftNoteChange(event)} />
+            <AppBar/>
         </>
     )
 }
-
