@@ -28,7 +28,7 @@ export default BuyGiftPage = () => {
             <GiftRecipient onChange={onGiftRecipientChange} />
             <GiftSender onChange={onGiftSenderChange} />
             <GiftNote onChange={onGiftNoteChange} />
-            <AppBar/>
+            <AppBar />
         </>
     )
 }
