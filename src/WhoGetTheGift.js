@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ToggleButton, ToggleButtonGroup, Typography } from '@mui/material';
 import './WhoGetTheGift.css';
-import { useState } from 'react';
 
 export default function WhoGetTheGift(props) {
-    const [whoGetsTheGift, setWhoGetsTheGift] = useState(props.WhoGetsTheGift);
     const [alignment, setAlignment] = useState('web');
     const handleChange = (event, newAlignment) => {
         setAlignment(newAlignment);
     };
     return (
         <>
-            <Typography>whoGetsTheGift</Typography>
+            <Typography>Who Gets TheGift</Typography>
             <br />
             <ToggleButtonGroup
                 color="primary"
