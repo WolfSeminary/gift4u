@@ -1,3 +1,4 @@
+import React  from 'react'
 import AppBar from '/AppBar'
 import Categories from './Categories'
 
