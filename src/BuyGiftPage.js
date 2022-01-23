@@ -1,4 +1,4 @@
-import React, { event } from "react"
+import React from "react"
 import AppBar from './AppBar'
 import WhoGetTheGift from './WhoGetTheGift'
 import GiftRecipient from './GiftRecipient'
@@ -28,7 +28,7 @@ export default BuyGiftPage = () => {
             <GiftRecipient onChange={onGiftRecipientChange} />
             <GiftSender onChange={onGiftSenderChange} />
             <GiftNote onChange={onGiftNoteChange} />
-            <AppBar/>
+            <AppBar />
         </>
     )
 }
