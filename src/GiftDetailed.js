@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { Card, CardHeader, CardMedia, CardContent, CardActions, Button, Typography, Box } from '@mui/material';
+import { useNavigate } from "react-router-dom";
 
 const GiftDetailed = (props) => {
+  const navigate = useNavigate();
   return (
     <Card sx={{ maxWidth: 345 }}>
       <Typography component="div">
@@ -19,7 +21,7 @@ const GiftDetailed = (props) => {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <Button variant="contained" disableElevation>
+        <Button onClick={() => navigate('/buygift')} variant="contained" disableElevation>
           CHOOSE
         </Button>
       </CardActions>
@@ -27,4 +29,4 @@ const GiftDetailed = (props) => {
   );
 }
 
-export default GiftDetailed;
+export default GiftDetailed
