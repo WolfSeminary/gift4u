@@ -8,11 +8,11 @@ import GiftNote from './GiftNote'
 export default BuyGiftPage = () => {
     return (
         <>
-            <WhoGetTheGift/>
-            <GiftRecipient/>
-            <GiftSender/>
-            <GiftNote/>
-            <AppBar/>
+            <WhoGetTheGift />
+            <GiftRecipient />
+            <GiftSender />
+            <GiftNote />
+            <AppBar />
         </>
     )
 }
