@@ -8,12 +8,12 @@ class Navigation extends React.Component {
     render() {
         return <BrowserRouter>
             <Routes>
-                <Route path="/Gifts" element={<Gifts />}></Route>
-                <Route path="/Categories" element={<Categories />}></Route>
+                <Route path="/gifts" element={<Gifts />}></Route>
+                <Route path="/categories" element={<Categories />}></Route>
             </Routes>
             <Breadcrumbs separator=">">
-                <Link to="/Categories">Categories</Link>
-                <Link to="/Gifts">Gifts</Link>
+                <Link to="/categories">Categories</Link>
+                <Link to="/gifts">Gifts</Link>
             </Breadcrumbs>
         </BrowserRouter>;
     }
