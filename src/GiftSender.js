@@ -1,10 +1,10 @@
-
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+
 const GiftSender=()=> {
   return (
     <>
-    <Label>Who send the gift?</Label>
+    <Label>🟠 Who send the gift?</Label>
     <Box
       component="form"
       sx={{
