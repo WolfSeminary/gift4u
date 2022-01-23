@@ -1,11 +1,14 @@
+
+import React,{useState} from 'react';
 import Box from '@mui/material/Box';
 import Label from '@mui/material/FormLabel';
 import TextField from '@mui/material/TextField';
 
-function GiftRecipient() {
+function GiftRecipient(props) {
+  const [giftRecipient,setGiftRecipient]=useState(props.GiftRecipient);
   return (
     <>
-      <Label>Recipient name</Label>
+      <Label>giftRecipient</Label>
       <Box
         component="form"
         sx={{
