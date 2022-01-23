@@ -3,7 +3,7 @@ import { Card, CardHeader, CardMedia, CardContent, CardActions, Button, Typograp
 import { useNavigate } from "react-router-dom";
 
 const GiftDetailed = () => {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <Card sx={{ maxWidth: 345 }}>
       <Typography component="div">
@@ -21,7 +21,7 @@ const GiftDetailed = () => {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <Button onClick={()=>navigate('/buygift')} variant="contained" disableElevation>
+        <Button onClick={() => navigate('/buygift')} variant="contained" disableElevation>
           CHOOSE
         </Button>
       </CardActions>
