@@ -6,18 +6,16 @@ import Gifts from './Gifts';
 
 class Navigation extends React.Component {
     render() {
-        return <div>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/Gifts" element={<Gifts />}></Route>
-                    <Route path="/Categories" element={<Categories />}></Route>
-                </Routes>
-                <Breadcrumbs separator=">">
-                    <Link to="/Categories">Categories</Link>
-                    <Link to="/Gifts">Gifts</Link>
-                </Breadcrumbs>
-            </BrowserRouter>
-        </div >;
+        return <BrowserRouter>
+            <Routes>
+                <Route path="/Gifts" element={<Gifts />}></Route>
+                <Route path="/Categories" element={<Categories />}></Route>
+            </Routes>
+            <Breadcrumbs separator=">">
+                <Link to="/Categories">Categories</Link>
+                <Link to="/Gifts">Gifts</Link>
+            </Breadcrumbs>
+        </BrowserRouter>;
     }
 }
 
