@@ -1,13 +1,13 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 const GiftCategories = () => {
-    const [selectedCategory , selectedCategory ] = React.useState('');
+    const [selectedCategory, setSelectedCategory] = useState('');
     const onSelectedCategoryChange = (event) => {
-        selectedCategory(event.target.value);
+        setSelectedCategory(event.target.value);
     };
     return (
         <div>
@@ -16,7 +16,7 @@ const GiftCategories = () => {
                 <Select
                     labelId="demo-simple-select-helper-label"
                     id="demo-simple-select-helper"
-                    value={category}
+                    value={selectedCategory}
                     label="Categories"
                     onChange={onSelectedCategoryChange}
                 >

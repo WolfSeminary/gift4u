@@ -1,4 +1,5 @@
 import Box from '@mui/material/Box';
+import Label from '@mui/material/FormLabel';
 import TextField from '@mui/material/TextField';
 
 const GiftSender = () => {

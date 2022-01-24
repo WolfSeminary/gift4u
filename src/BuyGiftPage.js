@@ -1,16 +1,16 @@
 import React from "react"
 import AppBar from './AppBar'
 import WhoGetTheGift from './WhoGetTheGift'
-import GiftRecipient from './GiftRecipient'
 import GiftSender from './GiftSender'
 import GiftNote from './GiftNote'
+import GiftRecipient from "./GiftRecipient "
 
-export default BuyGiftPage = () => {
+export default function BuyGiftPage(){
     return (
         <>
-            <WhoGetTheGift />
-            <GiftRecipient />
-            <GiftSender />
+            <WhoGetTheGift/>
+            <GiftRecipient/>
+            <GiftSender/>
             <GiftNote />
             <AppBar />
         </>
