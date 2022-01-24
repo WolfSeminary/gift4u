@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+import {Select,FormControl,MenuItem,InputLabel} from '@mui/material';
 
 const GiftCategories = () => {
     const [selectedCategory, setSelectedCategory] = useState('');

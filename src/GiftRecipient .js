@@ -1,8 +1,7 @@
 
 import React from 'react';
-import Box from '@mui/material/Box';
+import {Box,TextField} from '@mui/material';
 import Label from '@mui/material/FormLabel';
-import TextField from '@mui/material/TextField';
 
 function GiftRecipient() {
   return (

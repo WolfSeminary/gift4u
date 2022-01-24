@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Card, CardHeader, CardMedia, CardContent, CardActions, Button, Typography, Box } from '@mui/material';
 import { useNavigate } from "react-router-dom";
 
