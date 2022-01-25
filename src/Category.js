@@ -1,7 +1,10 @@
 import React from 'react';
 
-export default function Category() {
+export default function Category({ info }) {
 
-    return <></>
+    return (<>
+        <h1>{info.CategoryName}</h1>
+        <img src={info.categoryImage} />
+    </>)
 }
 

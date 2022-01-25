@@ -1,9 +1,9 @@
 import React, {useState} from "react"
-import AppBar from './AppBar'
 import WhoGetTheGift from './WhoGetTheGift'
 import GiftRecipient from './GiftRecipient'
 import GiftSender from './GiftSender'
 import GiftNote from './GiftNote'
+import MainAppBar from "./MainAppBar"
 
 export default BuyGiftPage = () => {
     const [whoGetsTheGift, setWhoGetsTheGift] = useState("a friend");
@@ -28,7 +28,7 @@ export default BuyGiftPage = () => {
             <GiftRecipient onChange={onGiftRecipientChange} />
             <GiftSender onChange={onGiftSenderChange} />
             <GiftNote onChange={onGiftNoteChange} />
-            <AppBar />
+            <MainAppBar/>
         </>
     )
 }

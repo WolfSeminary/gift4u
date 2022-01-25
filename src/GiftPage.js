@@ -1,13 +1,18 @@
 import React from 'react'
-import AppBar from './AppBar'
 import Breadcrumbs from './Breadcrumbs'
 import GiftDetailed from './GiftDetailed'
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import MainAppBar from './MainAppBar';
 
 const GiftPage = () => {
     <>
-        <AppBar/>
-        <Breadcrumbs/>
-        <GiftDetailed/>
+        <MainAppBar/>
+        <Breadcrumbs>
+            <Link to=""></Link>
+            <Link to="/categories">Categories</Link>
+            <Link to="/gifts">Gifts</Link>
+        </Breadcrumbs>
+        <GiftDetailed />
     </>
 }
 

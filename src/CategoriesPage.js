@@ -1,17 +1,17 @@
 import React from 'react';
-import AppBar from '/AppBar'
 import Categories from './Categories'
 import { useNavigate } from "react-router-dom";
+import MainAppBar from './MainAppBar';
 
-export default CategoriesPage = () => {
-    const navigate = useNavigate();
-    const onCategoryClick = ({categoryName}) => {
-        navigate(`/Categories/${categoryName}`)
-    }
-    return (
+    
+
+function CategoriesPage() {
+    return ( 
         <>
-            <AppBar />
-            <Categories onClick={onCategoryClick} />
-        </>
-    )
+        <MainAppBar/>
+        <Categories/>
+    </>
+     );
 }
+
+export default CategoriesPage;

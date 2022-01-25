@@ -3,6 +3,7 @@ import {Paper,Stack} from '@mui/material';
 import { styled } from '@mui/material/styles';
 import GiftCategories from './GiftCategories';
 import FindGift from './FindGift'
+import MainAppBar from './MainAppBar';
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -16,6 +17,7 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function HomePage() {
   return (
     <div>
+      <MainAppBar/>
       <Stack direction="row" spacing={2}>
         <Item><GiftCategories/></Item>
         <Item><FindGift/></Item>
