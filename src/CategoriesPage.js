@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom";
 
 export default CategoriesPage = () => {
     const navigate = useNavigate();
-    const onCategoryClick = () => {
-        navigate(`/Categories/${id}`)
+    const onCategoryClick = ({categoryName}) => {
+        navigate(`/Categories/${categoryName}`)
     }
     return (
         <>
             <AppBar />
-            <div><Categories onClick={onCategoryClick} /></div>
+            <Categories onClick={onCategoryClick} />
         </>
     )
 }
