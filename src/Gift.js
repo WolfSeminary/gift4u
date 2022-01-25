@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardActionArea,Card,CardMedia,Typography,CardContent } from '@mui/material';
 
-export default function Gift() {
+export default function Gift({info}) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
