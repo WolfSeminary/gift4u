@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useParams } from 'react';
 import { Grid } from '@mui/material';
 import Gift from './Gift';
 import { useNavigate } from "react-router-dom"; 

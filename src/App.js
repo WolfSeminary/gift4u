@@ -1,17 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { AppBar } from '@mui/material';
+import React from 'react';
+import HomePage from './Homepage';
+import MainAppBar from './MainAppBar';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload. Deploy-work!
-        </p>
-      </header>
-    </div>
-  );
+    return (<>
+    <MainAppBar/>
+    <HomePage/>
+    </>  );
 }
 
 export default App;

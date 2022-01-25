@@ -1,7 +1,8 @@
-import * as React from 'react';
-import Paper from '@mui/material/Paper';
-import Stack from '@mui/material/Stack';
+import React from 'react';
+import {Paper,Stack} from '@mui/material';
 import { styled } from '@mui/material/styles';
+import GiftCategories from './GiftCategories';
+import FindGift from './FindGift'
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -17,7 +18,7 @@ export default function HomePage() {
     <div>
       <Stack direction="row" spacing={2}>
         <Item><GiftCategories/></Item>
-        <Item>{/*Add <FindGift /> component here*/}</Item>
+        <Item><FindGift/></Item>
       </Stack>
     </div>
   );

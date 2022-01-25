@@ -1,5 +1,6 @@
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
+import React from 'react';
+import {Box,TextField} from '@mui/material';
+import Label from '@mui/material/FormLabel';
 
 const GiftSender = () => {
   return (

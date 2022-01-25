@@ -1,13 +1,10 @@
-import * as React from 'react';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+import React, { useState } from 'react';
+import {Select,FormControl,MenuItem,InputLabel} from '@mui/material';
 
 const GiftCategories = () => {
-    const [category, setCategory] = React.useState('');
-    const handleChange = (event) => {
-        setCategory(event.target.value);
+    const [selectedCategory, setSelectedCategory] = useState('');
+    const onSelectedCategoryChange = (event) => {
+        setSelectedCategory(event.target.value);
     };
     return (
         <div>
@@ -16,9 +13,9 @@ const GiftCategories = () => {
                 <Select
                     labelId="demo-simple-select-helper-label"
                     id="demo-simple-select-helper"
-                    value={category}
+                    value={selectedCategory}
                     label="Categories"
-                    onChange={handleChange}
+                    onChange={onSelectedCategoryChange}
                 >
                     <MenuItem value={1}>Food</MenuItem>
                     <MenuItem value={2}>Attractions</MenuItem>
