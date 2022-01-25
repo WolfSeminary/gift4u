@@ -1,12 +1,11 @@
-
 import React from 'react';
 import {Box,TextField} from '@mui/material';
 import Label from '@mui/material/FormLabel';
 
-function GiftRecipient() {
+const GiftSender = () => {
   return (
     <>
-      <Label>Gift Recipient</Label>
+      <Label>🟠 Who send the gift?</Label>
       <Box
         component="form"
         sx={{
@@ -20,5 +19,4 @@ function GiftRecipient() {
     </>
   );
 }
-
-export default GiftRecipient;
+export default GiftSender;
