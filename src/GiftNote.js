@@ -1,11 +1,17 @@
-import React from 'react';
-import { Box, TextField } from '@mui/material';
+import React from "react";
+import { Box, TextField } from "@mui/material";
 
-export default function GiftNote() {
+export default function GiftNote({ onChange, value }) {
   return (
     <Box>
-      <label variant="h1">🟠Gift Note</label>
-      <TextField id="outlined-basic" property="fullWidth" multiline="enable" variant="outlined" label="test test test test" />
+      <TextField
+        property="fullWidth"
+        multiline
+        rows={4}
+        label="Gift Note"
+        onChange={onChange}
+        value={value}
+      />
     </Box>
   );
 }

@@ -1,19 +1,34 @@
-import React from 'react'
-import Breadcrumbs from './Breadcrumbs'
-import GiftDetailed from './GiftDetailed'
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import MainAppBar from './MainAppBar';
+import { Breadcrumbs } from "@mui/material";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import GiftDetailed from "./GiftDetailed";
+import MainAppBar from "./MainAppBar";
 
-const GiftPage = () => {
+const categoriesName = {
+  1: "Food",
+  2: "Attractions",
+  3: "Gift Cards",
+  4: "Toys",
+};
+
+export default function GiftPage() {
+  const location = useLocation();
+  const gift = location.state;
+
+  const routing = [
+    <Link to="/Categories">Categories</Link>,
+    <Link to={`/category/${gift.categoryID}`}>
+      {categoriesName[gift.categoryID]}
+    </Link>,
+    <>{gift.giftName}</>,
+  ];
+  return (
     <>
-        <MainAppBar/>
-        <Breadcrumbs>
-            <Link to=""></Link>
-            <Link to="/categories">Categories</Link>
-            <Link to="/gifts">Gifts</Link>
-        </Breadcrumbs>
-        <GiftDetailed />
+      <MainAppBar />
+      <Breadcrumbs separator=">" aria-label="breadcrumbs">
+        {routing}
+      </Breadcrumbs>
+      <GiftDetailed gift={gift} />
     </>
+  );
 }
-
-export default GiftPage
