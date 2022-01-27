@@ -1,22 +1,26 @@
-import React from 'react';
-import {Box,TextField} from '@mui/material';
-import Label from '@mui/material/FormLabel';
+import React from "react";
+import { Box, TextField } from "@mui/material";
+import Label from "@mui/material/FormLabel";
 
-const GiftSender = () => {
+export default function GiftSender({ onChange, value }) {
   return (
     <>
-      <Label>🟠 Who send the gift?</Label>
       <Box
         component="form"
         sx={{
-          '& > :not(style)': { m: 1, width: '25ch' },
+          "& > :not(style)": { m: 1, width: "25ch" },
         }}
         noValidate
         autoComplete="off"
       >
-        <TextField id="outlined-basic" variant="outlined" />
+        <TextField
+          id="outlined-basic"
+          variant="outlined"
+          label="Who send the gift?"
+          onChange={onChange}
+          value={value}
+        />
       </Box>
     </>
   );
 }
-export default GiftSender;
